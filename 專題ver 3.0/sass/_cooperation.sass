@@ -1,0 +1,73 @@
+// 異業合作區域
+.container
+    margin: 0 auto
+    margin-top: 80px
+    width: 80%
+    background-color: #FFDFAF
+    color: #9D9D9D
+    padding-bottom: 20px
+    .title-box
+        margin: 20px
+        .page-title
+            font-size: 35px
+            font-weight: 700
+            letter-spacing: 2px
+            text-align: center
+            padding-bottom: 10px
+        .text-item
+            text-align: center
+            line-height: 30px
+    .item-img
+        text-align: center
+        margin: 10px 0
+        width: 100%
+        img
+            width: 60%
+            border-radius: 15px
+    .text-box
+        width: 80%
+        margin: 0 auto
+        padding: 15px
+        background-color: #FFDAC7
+        border: 2px solid #fff
+        border-radius: 15px
+        line-height: 30px
+        letter-spacing: 2px
+        .list-content
+            text-align: left
+            margin-top: 10px
+            .list-item
+                vertical-align: text-top
+                &::after
+                    content: ":"
+                    color: #9D9D9D
+                    font-size: 20px
+
+// rwd
+@media (max-width: 1210px)
+    // .main
+    //     width: 100%
+
+@media ( max-width: 992px)
+    .title
+        font-size: 16px
+        font-weight: 500
+        margin-top: 10px
+
+    .content
+        margin-bottom: 5px
+
+        a
+            font-size: 12px
+
+    .hide--mb
+        display: none
+
+    .member-box
+        grid-template-columns: repeat(2,1fr)
+        grid-template-rows: repeat(2,2fr)
+        height: 100%
+
+@media (max-width: 767px)
+    .main
+        margin-top: 9rem
