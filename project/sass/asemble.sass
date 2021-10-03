@@ -10,7 +10,6 @@
 @import list
 // 關於我們
 @import about
-@import aboute
 // 單獨商家資訊
 @import restaurant
 
@@ -74,13 +73,33 @@ a
 .icon_bottom--2
   font-size: 32px
 /* 收藏列表
-.favorite_item
+.offcanvas-header
+  background: $color-primary4
+
+#offcanvasWithBackdrop
+  overflow-y: scroll
+
+#offcanvasWithBackdropLabel
+  +title--sm
+  color: $color-primary1
+
+.collect
+  +content--xl
+  font-size: 18px
   +flex(column,wrap,center,center)
+
+  p
+    +content--xl
+    margin-top: 5px
+
+.favorite_item
+  text-align: center
 
 /* 樣式
 .img--md
   width: 300px
   height: 200px
+  border-radius: 5px
 
 .icon
   &--xl

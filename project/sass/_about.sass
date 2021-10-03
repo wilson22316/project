@@ -4,6 +4,7 @@
     background: $color-primary3
     +flex(row,wrap,center,center)
     margin: 50px auto
+    border-radius: 5px
 
     &:hover
         box-shadow: 0 0 15px rgb(153, 153, 153)
@@ -19,6 +20,7 @@
             // background-attachment: fixed
     background-position: center center
     background-repeat: no-repeat
+    border-radius: 5px 0 0 5px
 
 .img--idea
     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(../image/idea.jpeg)
@@ -90,6 +92,7 @@
     width: 100%
     background: $color-primary3
     padding: 20px
+    border-radius: 5px
 
     &--center
         border-left: 2px solid #fff
@@ -128,7 +131,7 @@
     height: 300px
     font-size: 1.25rem
 
-@media (max-width: 992px)
+@media (max-width: 1200px)
     .contain_box
         width: 96vw
         margin-left: 2vw
@@ -137,14 +140,15 @@
         width: 100%
         height: auto
         flex-direction: column
-        margin-top: 20px
+        margin-top: 25px
+        margin-bottom: 25px
 
     .about_content_box--members,#about_content_box--members
         width: 100%
         // height: 300px
 
     #about_content_box--members
-        margin: 50px 0
+        margin: 35px 0
 
     .img--story,.img--idea,.content--about,.img--team
         width: 100%

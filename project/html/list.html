@@ -28,47 +28,34 @@
     <div class="main">
         <div class="topic">食指大動 IT'S MEAL TIME!</div>
         <div class="sequence">
-            <input id="brunch" type="checkbox">
-            <label for="brunch">早午餐</label>
-            <input id="chinesefood" type="checkbox">
-            <label for="chinesefood">中式美食</label>
-            <input id="broad" type="checkbox">
-            <label for="broad">外國美食</label>
+            <div class="catagory">
+                <input class="catagory_content" id="brunch" type="checkbox">
+                <label class="catagory_content" for="brunch">早午餐</label>
+            </div>
+            <div class="catagory">
+                <input class="catagory_content" id="chinesefood" type="checkbox">
+                <label class="catagory_content" for="chinesefood">中式美食</label>
+
+            </div>
+            <div class="catagory">
+                <input class="catagory_content" id="broad" type="checkbox">
+                <label class="catagory_content" for="broad">外國美食</label>
+            </div>
 
             <select name="" id="select">
                 <option value="default">選擇排序方式</option>
-                <option value="lowToHigh--P">價格低到高</option>
-                <option value="highToLow--P">價格高到低</option>
-                <option value="lowToHigh--S">評價低到高</option>
-                <option value="highToLow--S">評價高到低</option>
-                <option value="lowToHigh--D">距離低到高</option>
-                <option value="highToLow--D">距離高到低</option>
+                <option value="lowToHigh--P">價格&nbsp;低到高</option>
+                <option value="highToLow--P">價格&nbsp;高到低</option>
+                <option value="lowToHigh--S">評價&nbsp;低到高</option>
+                <option value="highToLow--S">評價&nbsp;高到低</option>
+                <option value="lowToHigh--D">距離&nbsp;近到遠</option>
+                <option value="highToLow--D">距離&nbsp;遠到近</option>
             </select>
 
-            <div class="total"></div>
-            <!-- 排序 -->
-            <!-- <div class="sort">
-                <span class="hide--mb"><i class="fas fa-sort-amount-down icon--lg"></i>排序 :</span>
-                <select name="評價" id="sort1">
-                    <option value="">評價</option>
-                    <option value="">評價:高到低</option>
-                    <option value="">評價:低到高</option>
-                </select>
-                
-                <select name="價格" id="sort2">
-                    <option value="">價格</option>
-                    <option value="">價格:高到低</option>
-                    <option value="">價格:低到高</option>
-                </select>
-                
-                <select name="距離" id="sort3">
-                    <option value="">距離</option>
-                    <option value="">距離:500m↑</option>
-                    <option value="">距離:500m↓</option>
-                </select>
-                <div class="hide--mb">(由左自右 由上自下)</div>
-            </div>  -->
         </div>
+
+        <div class="total"></div>
+
         <div class="restaurant_all"></div>
     </div>
 

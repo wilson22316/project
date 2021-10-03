@@ -17,13 +17,13 @@ var arr =
 
 function random() {
     let index = Math.floor((Math.random() * arr.length));
-    $('#random')[0].innerHTML =
-        `<div class="random_item">
-        <a href="${index + 1}${arr[index]}.html">
-            <img class="img--md" src="../image/food/${arr[index]}-2.jpg">
-            <div class="random_text">${arr[index]}</div>
-        </a>
-    </div>`;
+    $('#random')[0].innerHTML = `
+        <div class="random_item">
+            <a href="${index + 1}${arr[index]}.html">
+                <img class="img--md" src="../image/food/${arr[index]}-2.jpg">
+                <div class="random_text">${arr[index]}</div>
+            </a>
+        </div>`;
 }
 
 // 愛心切換
@@ -45,7 +45,8 @@ function change(e) {
 
     data.push(`<div class="favorite_item">
     <a href="${e.id.substr(1, 1)}.html">
-        <img class="img--md" src="/image/a${e.id.substr(1, 1)}.jpeg">${arr[e.id.substr(1, 1) - 1]}
+        <img class="img--md" src="/image/a${e.id.substr(1, 1)}.jpeg">
+        <p>${arr[e.id.substr(1, 1) - 1]}</p>
     </a>
 </div>`)
     // console.log(data)
@@ -54,9 +55,11 @@ function change(e) {
     $('.collect')[0].innerHTML += `
     <div class="favorite_item">
         <a href="${e.id.substr(1, 1)}.html">
-            <img class="img--md" src="/image/a${e.id.substr(1, 1)}.jpeg">${arr[e.id.substr(1, 1) - 1]}
+            <img class="img--md" src="/image/a${e.id.substr(1, 1)}.jpeg">
+            <p>${arr[e.id.substr(1, 1) - 1]}</p>
         </a>
-    </div>`
+    </div>
+    <br>`
 
 }
 function change2(f) {

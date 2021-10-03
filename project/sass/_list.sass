@@ -5,14 +5,27 @@
   width: 80vw
   margin-left: 10vw
   text-align: center
+  +flex(row,wrap,center,center)
 
   &span
     margin: 0 3px
     vertical-align: middle
 
+.catagory
+  +flex(row,wrap,center,center)
+  display: inline-flex
+  margin-right: 5px
+  // vertical-align: middle
+
+.catagory_content
+  font-size: 16px
+  height: 16px
+  margin-right: 3px
+
 .total
   margin-top: 20px
-  // text-align: left
+  text-align: center
+  color: $color-primary3
 
 .sort
   +title--md
@@ -22,8 +35,8 @@ select
   -moz-appearance: none
   -webkit-appearance: none
   background: url("../image/expand.svg") no-repeat scroll right center
-  background-color: $color-primary3
   color: #fff
+  background-color: $color-primary3
   padding: 3px
   font-size: 1rem
   width: 150px
@@ -42,8 +55,7 @@ select
   text-align: center
 
 .random_text
-  font-size: 1.75rem
-  color: $color-primary4
+  +title--md
   margin-top: 10px
 
 /* 美食列表-店家卡片
@@ -135,6 +147,9 @@ select
     text-align: center
     margin-bottom: 10px
 
+  .total
+    margin: 12px 0
+
   .restaurant_all
     width: 100vw
     margin-left: 0
@@ -158,6 +173,14 @@ select
     &_name
       font-size: 18px
       margin: 0
+
+    &:hover
+      box-shadow: none
+      transform: scale(1)
+      background: #968a7e17
+      // background: #ecdcbe15
+
+    &:active
 
   .mb_flex
     +flex(row,wrap,flex-start,center)
@@ -199,10 +222,22 @@ select
     width: 480px
 
 @media (max-width: 499px)
+  .sequence
+    margin-top: 16px
+
   select
-    margin-top: 1rem
-    font-size: 1.25rem
+    font-size: 14px
     width: 120px
+
+  .catagory
+    +flex(row,wrap,center,center)
+    display: inline-flex
+    // vertical-align: middle
+
+  .catagory_content
+    font-size: 14px
+    height: 14px
+    margin-right: 3px
 
   .restaurant_all
     // height: auto
