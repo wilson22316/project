@@ -1302,7 +1302,7 @@ select {
 }
 
 .cowork_box {
-  width: 700px;
+  width: 900px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -1320,10 +1320,12 @@ select {
   font-size: 1.25rem;
   color: #d5aa88;
   margin: 0 0 20px 0;
+  line-height: 1.75;
 }
 
 .list_box {
   width: 100%;
+  margin: 20px 0;
 }
 
 .list_content {
@@ -1331,7 +1333,6 @@ select {
   border-radius: 10px;
   width: 100%;
   padding: 40px 60px;
-  margin: 20px 0;
 }
 
 .list_item {
@@ -1340,14 +1341,16 @@ select {
   margin: 20px 0;
 }
 
-@media (max-width: 710px) {
+@media (max-width: 992px) {
   .cowork_box {
     width: 90vw;
     margin-left: 5vw;
   }
   .cowork_content p {
     margin: 12px 0;
-    line-height: 1.75;
+  }
+  .list_box {
+    margin: 0 0 20px 0;
   }
   .list_content {
     padding: 25px 40px;

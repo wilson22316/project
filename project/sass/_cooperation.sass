@@ -1,5 +1,5 @@
 .cowork_box
-    width: 700px
+    width: 900px
     +flex(column,wrap,center,center)
     margin: 0 auto
 
@@ -11,26 +11,23 @@
     p
         +content--xl
         margin: 0 0 20px 0
+        line-height: 1.75
 
 .list_box
     width: 100%
+    margin: 20px 0
 
 .list_content
     border: 3px solid $color-secondary1
     border-radius: 10px
     width: 100%
     padding: 40px 60px
-    margin: 20px 0
 
 .list_item
     +content--xl
     margin: 20px 0
-// rwd
-// @media (max-width: 1210px)
 
-// @media ( max-width: 992px)
-
-@media (max-width: 710px)
+@media ( max-width: 992px)
     .cowork_box
         width: 90vw
         margin-left: 5vw
@@ -39,7 +36,11 @@
 
         p
             margin: 12px 0
-            line-height: 1.75
+
+    .list_box
+        margin: 0 0 20px 0
 
     .list_content
         padding: 25px 40px
+
+// @media (max-width: 710px)
