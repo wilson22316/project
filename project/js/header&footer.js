@@ -3,28 +3,34 @@ document.querySelector('.header').innerHTML = `
     <a href="index.html">
         <img class="header_logo" src="../image/logo.png">
     </a>
+
     <input type="checkbox" id="burger">
     <label class="checkbtn" for="burger"><i id="Burger" class="fas fa-bars burgerbtn"></i></label>
+
     <ul class="nav_lists">
         <i class="fas fa-times closebtn hide--pc"></i>
+
         <li class="nav_item nav_item--first">
             <a class="nav_link" href="index.html">
                 <span class="hide--mb"><i class="fas fa-home icon--lg"></i></span>首頁
                 <span class="hide--pc eng">HOME</span>
             </a>
         </li>
+
         <li class="nav_item">
             <a class="nav_link" href="list.html">
                 <span class="hide--mb"><i class="fas fa-utensils icon--lg "></i></span>食指大動
-                <span class="hide--pc eng">RESTAURANT LIST</span>
+                <span class="hide--pc eng">IT'S MEAL TIME!</span>
             </a>
         </li>
+
         <li class="nav_item">
             <a class="nav_link" href="aboutus.html">
                 <span class="hide--mb"><i class="fas fa-book icon--lg"></i></span>創作食光
                 <span class="hide--pc eng">ABOUT</span>
             </a>
         </li>
+
         <li class="nav_item">
             <a class="nav_link fast" data-bs-toggle="modal" data-bs-target="#Modal">
                 <span class="hide--mb"><i class="fas fa-dice icon--lg"></i></span>食光寶貴

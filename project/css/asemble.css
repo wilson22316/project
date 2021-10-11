@@ -57,13 +57,6 @@ table {
   width: 150px;
 }
 
-.abc {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
 .nav {
   background: #ecdcbe;
   display: flex;
@@ -168,6 +161,9 @@ table {
     margin: 0;
     font-size: 20px;
   }
+  .nav_link:hover {
+    color: #95897d;
+  }
   .open {
     top: 0;
     left: 0;
@@ -250,7 +246,7 @@ table {
 .main_map {
   width: 1440px;
   height: 900px;
-  background: url("../image/map.png") no-repeat;
+  background: url("../image/web_1440x900.jpg") no-repeat;
   background-size: 100% 100%;
   background-position: bottom;
   margin: 0 auto;
@@ -269,8 +265,11 @@ table {
 
 @media (max-width: 499px) {
   .main_map {
+    background: url("../image/mobile_1000x1100.jpg") no-repeat;
     width: 100vw;
-    height: 275px;
+    height: 300px;
+    background-size: 100vw 300px;
+    background-position: top center;
   }
 }
 
@@ -599,7 +598,7 @@ select {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 .img--idea {
@@ -609,6 +608,7 @@ select {
 .img--team {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../image/team.jpeg);
   background-attachment: fixed;
+  border-radius: 5px;
 }
 
 .title--about, .content--about {
@@ -748,8 +748,8 @@ select {
 
 @media (max-width: 1200px) {
   .contain_box {
-    width: 96vw;
-    margin-left: 2vw;
+    width: 92vw;
+    margin-left: 4vw;
   }
   .about_content_box {
     width: 100%;
@@ -770,7 +770,7 @@ select {
   }
   .content--about {
     height: auto;
-    padding: 5px 15px;
+    padding: 15px;
   }
   .about_content {
     margin: 5px 0;
@@ -802,6 +802,7 @@ select {
     margin-top: 0;
     padding-top: 0;
     border-top: 0;
+    text-align: left;
   }
   .person_inf--work {
     line-height: 1.5;
@@ -1300,94 +1301,56 @@ select {
   }
 }
 
-.container {
+.cowork_box {
+  width: 700px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  margin-top: 80px;
-  width: 80%;
-  background-color: #FFDFAF;
-  color: #9D9D9D;
-  padding-bottom: 20px;
 }
 
-.container .title-box {
-  margin: 20px;
-}
-
-.container .title-box .page-title {
-  font-size: 35px;
-  font-weight: 700;
-  letter-spacing: 2px;
+.cowork_content {
+  width: 100%;
+  display: inline-block;
   text-align: center;
-  padding-bottom: 10px;
 }
 
-.container .title-box .text-item {
-  text-align: center;
-  line-height: 30px;
+.cowork_content p {
+  font-size: 1.25rem;
+  color: #d5aa88;
+  margin: 0 0 20px 0;
 }
 
-.container .item-img {
-  text-align: center;
-  margin: 10px 0;
+.list_box {
   width: 100%;
 }
 
-.container .item-img img {
-  width: 60%;
-  border-radius: 15px;
+.list_content {
+  border: 3px solid #ecdcbe;
+  border-radius: 10px;
+  width: 100%;
+  padding: 40px 60px;
+  margin: 20px 0;
 }
 
-.container .text-box {
-  width: 80%;
-  margin: 0 auto;
-  padding: 15px;
-  background-color: #FFDAC7;
-  border: 2px solid #fff;
-  border-radius: 15px;
-  line-height: 30px;
-  letter-spacing: 2px;
+.list_item {
+  font-size: 1.25rem;
+  color: #d5aa88;
+  margin: 20px 0;
 }
 
-.container .text-box .list-content {
-  text-align: left;
-  margin-top: 10px;
-}
-
-.container .text-box .list-content .list-item {
-  vertical-align: text-top;
-}
-
-.container .text-box .list-content .list-item::after {
-  content: ":";
-  color: #9D9D9D;
-  font-size: 20px;
-}
-
-@media (max-width: 992px) {
-  .title {
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 10px;
+@media (max-width: 710px) {
+  .cowork_box {
+    width: 90vw;
+    margin-left: 5vw;
   }
-  .content {
-    margin-bottom: 5px;
+  .cowork_content p {
+    margin: 12px 0;
+    line-height: 1.75;
   }
-  .content a {
-    font-size: 12px;
-  }
-  .hide--mb {
-    display: none;
-  }
-  .member-box {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 2fr);
-    height: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .main {
-    margin-top: 9rem;
+  .list_content {
+    padding: 25px 40px;
   }
 }
 

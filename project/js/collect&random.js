@@ -59,7 +59,7 @@ function change(e) {
             <p>${arr[e.id.substr(1, 1) - 1]}</p>
         </a>
     </div>
-    <br>`
+    br>`
 
 }
 function change2(f) {
