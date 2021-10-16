@@ -5,7 +5,9 @@ document.querySelector('.modal').innerHTML = `
             <p class="modal-title" id="ModalLabel">我們幫你選！節省您的寶貴時光～</p>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+
         <div id="random"></div>
+
         <div class="modal-footer">
             <button type="button" class="btn btn-primary pop fast"
                 style="border:none;background: #f0a28f;">再來一次</button>
@@ -21,6 +23,7 @@ document.querySelector('.bottom_button').innerHTML = `
         <i class="fas fa-heart icon_bottom--1"></i>
     </a>
 </div>
+
 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasWithBackdrop"
 aria-labelledby="offcanvasWithBackdropLabel">
     <div class="offcanvas-header">
@@ -28,10 +31,12 @@ aria-labelledby="offcanvasWithBackdropLabel">
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
             aria-label="Close"></button>
     </div>
+    
     <div class="offcanvas-body collect">
         <p>尚未有收藏～快去看看有什麼好吃的吧！</p>
     </div>
 </div>
+
 <div class="circle_opacity--5 icon_always--2">
     <a class="back-to-top" href="#">
         <i class="fas fa-chevron-up icon_bottom--2"></i>
