@@ -1473,6 +1473,12 @@ a:link, a:visited, a:hover {
 
 .favorite_item {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.favorite_item:hover {
+  transform: scale(1.025);
+  transition: .5s;
 }
 
 /* 樣式 */

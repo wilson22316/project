@@ -20,7 +20,7 @@ function random() {
     $('#random')[0].innerHTML = `
         <div class="random_item">
             <a href="${index + 1}${arr[index]}.html">
-                <img class="img--md" src="../image/food/${arr[index]}-2.jpg">
+                <img class="img--md" src="${restaurantAll[index].food_img}">
                 <div class="random_text">${arr[index]}</div>
             </a>
         </div>`;
@@ -45,7 +45,7 @@ function change(e) {
 
     data.push(`<div class="favorite_item">
     <a href="${e.id.substr(1, 1)}.html">
-        <img class="img--md" src="/image/a${e.id.substr(1, 1)}.jpeg">
+        <img class="img--md" src="${restaurantAll[e.id.substr(1, 1) - 1].food_img}">
         <p>${arr[e.id.substr(1, 1) - 1]}</p>
     </a>
 </div>`)
@@ -55,11 +55,10 @@ function change(e) {
     $('.collect')[0].innerHTML += `
     <div class="favorite_item">
         <a href="${e.id.substr(1, 1)}.html">
-            <img class="img--md" src="/image/a${e.id.substr(1, 1)}.jpeg">
+            <img class="img--md" src="${restaurantAll[e.id.substr(1, 1) - 1].food_img}">
             <p>${arr[e.id.substr(1, 1) - 1]}</p>
         </a>
-    </div>
-    br>`
+    </div>`
 
 }
 function change2(f) {

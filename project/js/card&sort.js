@@ -187,7 +187,7 @@ let restaurantAll = [
         distance: 800,
         category: 'chinesefood',
         phone: '08-866-6557',
-        business_hours: ['', '']
+        business_hours: ['暫無提供', '']
     },
     No12 = {
         index: 12,
@@ -204,7 +204,7 @@ let restaurantAll = [
         distance: 850,
         category: 'chinesefood',
         phone: '(02)2832 0179',
-        business_hours: ['', '']
+        business_hours: ['暫無提供', '']
     },
     No13 = {
         index: 13,
@@ -283,12 +283,16 @@ document.querySelector('.restaurant_all').innerHTML = `
             // console.log(restaurantAll[0])
             return `
             <div class="restaurant ${res.category}" data-name="${res.name}" data-price="${res.price}" data-star="${res.star}" data-distance="${res.distance}">
+
                 <i class="far fa-heart heart_change heart--restaurant" onclick="change(this)"></i>
                 <i class="fas fa-heart heart_change2 heart--restaurant" onclick="change2(this)"></i>
+
                 <a href="${res.index}${res.name}.html" class="mb_flex">
                     <img class="food_photo" src="${res.food_img}">
+
                     <div class="restaurant_inf">
                         <div class="restaurant_name">${res.name}</div>
+
                         <div class="pc_reverse">
                             <div class="title title--s${res.index}"></div>
 
@@ -300,6 +304,7 @@ document.querySelector('.restaurant_all').innerHTML = `
                                 <p>${res.addr}</p>
                                 <p>${res.distance}m</p>
                             </div>
+                            
                         </div>
                     </div>
                 </a>

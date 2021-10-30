@@ -33,7 +33,7 @@ aria-labelledby="offcanvasWithBackdropLabel">
     </div>
     
     <div class="offcanvas-body collect">
-        <p>尚未有收藏～快去看看有什麼好吃的吧！</p>
+        <p></p>
     </div>
 </div>
 

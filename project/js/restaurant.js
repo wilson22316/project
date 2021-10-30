@@ -33,17 +33,17 @@ for (let i = 0; i < restaurantAll.length; i++) {
             <div class="carousel-inner">
               <div class="carousel-item active img--carousel">
                 <img src="${restaurantAll[i].store_img}"
-                  class="d-block w-100 carousel_img">
+                  class="d-block w-100 carousel_img" alt="照片從缺">
               </div>
               <div class="carousel-item img--carousel">
                 <img
                   src="${restaurantAll[i].food_img}"
-                  class="d-block w-100 carousel_img">
+                  class="d-block w-100 carousel_img" alt="照片從缺">
               </div>
               <div class="carousel-item img--carousel">
                 <img
                   src="${restaurantAll[i].food_img2}"
-                  class="d-block w-100 carousel_img">
+                  class="d-block w-100 carousel_img" alt="照片從缺">
               </div>
             </div>
             <!-- 向左一張 -->
